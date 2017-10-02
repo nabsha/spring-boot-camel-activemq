@@ -1,0 +1,18 @@
+logging:
+  config: classpath:logback.xml
+
+camel:
+  springboot:
+    name: MyCamelContext
+
+server:
+  host: 0.0.0.0
+  port: 4000
+
+#activemq configuration
+spring:
+  activemq:
+    broker-url: vm://localhost?broker.persistent=true
+    in-memory: true
+    pool:
+      enabled: false
